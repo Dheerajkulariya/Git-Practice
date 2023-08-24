@@ -1,0 +1,56 @@
+----------------------------------------------- What is git? -----------------------------------------------------------------
+
+Git is the free and open source distributed version control system that's responsible for everything GitHub
+related that happens locally on your computer. This cheat sheet features the most important and commonly
+used Git commands for easy reference
+
+or
+
+Git is a distributed version control system (VCS) designed to track changes in source code during software development. It was created by Linus Torvalds in 2005 and has since become one of the most widely used version control systems in the world.
+
+Here's a breakdown of some key concepts related to Git:
+
+Version Control System (VCS): A system that allows developers to track and manage changes to their source code and collaborate with others effectively.
+
+Distributed System: Git is a distributed VCS, meaning that every developer working on a project has their own local copy of the entire codebase, along with its complete history. This enables developers to work offline, make local changes, and synchronize with others when necessary.
+
+Repository: A Git repository (or repo) is a collection of files, directories, and the complete history of changes associated with a project. It can exist locally on a developer's machine or remotely on a server.
+
+Commit: A commit is a snapshot of changes made to the codebase at a specific point in time. Each commit has a unique identifier (a hash) and includes a message that describes the changes.
+
+Branch: A branch is a separate line of development that allows developers to work on features, fixes, or experiments without affecting the main codebase. Branches can be merged back into the main branch (usually called "master" or "main") once the changes are ready.
+
+Merge: Merging is the process of integrating changes from one branch into another. This is typically done to combine the work done in feature branches back into the main branch.
+
+Pull Request (PR): In many Git hosting platforms (like GitHub, GitLab, and Bitbucket), a pull request is a way to propose changes from one branch to another. It allows for code review and collaboration before changes are merged.
+
+Remote: A remote is a copy of a repository stored on a different server, often used for collaboration. Developers can push their changes to a remote repository and pull changes from it.
+
+Clone: Cloning is the process of creating a local copy of a remote repository. This copy includes all the history, branches, and files from the original repository.
+
+Fetch: Fetching involves retrieving changes from a remote repository without integrating them into the local codebase. It allows developers to see what changes others have made before deciding to merge or pull them.
+
+Pull: Pulling is the process of fetching changes from a remote repository and integrating them into the local codebase. It's essentially a combination of fetching and merging.
+
+Push: Pushing refers to sending local commits to a remote repository. This is how developers share their changes with others.
+
+Git's flexibility, powerful branching and merging capabilities, and widespread adoption have made it an essential tool for both individual developers and large teams working on software projects. It's used not only for source code management but also for versioning of documentation, configuration files, and more.
+
+----------------------- Some Coomand Lies  ------------------------
+
+
+Create a new repository on the command line
+
+echo "# Git-Practice" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Dheerajkulariya/Git-Practice.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:Dheerajkulariya/Git-Practice.git
+git branch -M main
+git push -u origin main
